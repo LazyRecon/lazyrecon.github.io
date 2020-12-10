@@ -1,0 +1,25 @@
+@import "bootstrap/mixins";
+
+@each $name, $color in $colors {
+  .background-#{$name} {
+    background-color: $color;
+  }
+  .btn-#{$name}{
+    background-color: $color;
+    color: $white;
+  }
+  .btn-outline-#{$name}{
+    border-color: $color;
+    color: $color;
+  }
+}
+
+.background-gradient{
+  @include gradient-y($gray, $white)
+}
+
+.h-md-100 {
+  @include media-breakpoint-up('md') {
+    height: 100%;
+  }
+}

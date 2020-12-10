@@ -1,0 +1,42 @@
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-extra-bold {
+  font-weight: 900;
+}
+.swiper-slide {
+  h1 {
+    line-height: 30px;
+    font-size: 36px;
+    @include media-breakpoint-up(md) {
+      font-size: 54px;
+      line-height: 60px;
+    }
+  }
+
+  h2 {
+    line-height: 26px;
+    font-size: 20px;
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    @include media-breakpoint-up(md) {
+      font-size: 30px;
+    }
+  }
+
+  h6 {
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+}

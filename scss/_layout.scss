@@ -1,0 +1,46 @@
+html, body {
+  position: relative;
+  height: 100%;
+  font-family: 'Fira Sans', sans-serif;
+  color: #333333;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+
+  .swiper-container-inn & {
+    padding-right: 30px;
+  }
+}
+
+.logo {
+  @include media-breakpoint-up(md) {
+    margin-right: 87px;
+  }
+}
+
+.slide-start-text-container{
+  @include media-breakpoint-up(md){
+    padding-left: 88px;
+  }
+}
+
+@each $name, $color in $colors {
+  .background-#{$name} {
+    .swiper-slide {
+      color: white;
+    }
+  }
+}
+
+.swiper-slide {
+  padding: 23px 16px;
+  @include media-breakpoint-up(md) {
+    padding: 41px 25px;
+  }
+}
