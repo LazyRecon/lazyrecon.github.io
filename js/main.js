@@ -1,4 +1,4 @@
-(function ($, viewport) {
+(function ($) {
     $(document).ready(function () {
 
         var external = new Swiper('.swiper-container-ext', {
@@ -7,6 +7,7 @@
             scrollbar: {
                 draggable: false,
             },
+            navigation: false
         });
 
         var internal = new Swiper('.swiper-container-inn', {
@@ -40,4 +41,4 @@
         })
 
     });
-})(jQuery, ResponsiveBootstrapToolkit);
+})(jQuery);
